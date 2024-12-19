@@ -3,8 +3,8 @@ class SvtAv1Psy < Formula
   license "BSD-3-Clause-Clear"
   head "https://github.com/gianni-rosato/svt-av1-psy.git"
 
-  depends_on "obuparse"
-  depends_on "gnu-sed" => :build
+  depends_on "cmake" => :build
+  depends_on "yasm" => :build
   
   def install
     Dir.chdir "Build/linux" do
